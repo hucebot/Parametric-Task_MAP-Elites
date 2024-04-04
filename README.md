@@ -25,7 +25,7 @@ Optimizing a set of functions simultaneously by leveraging their similarity is c
  - pip install tqdm
  - pip install matplotlib
 
-   ### Archive
+### Archive
 
 This folder only has an archive function and is not meant to be easily run.
 
