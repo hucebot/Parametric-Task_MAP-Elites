@@ -10,6 +10,13 @@ Optimizing a set of functions simultaneously by leveraging their similarity is c
 
 (a) Quality-Diversity is the problem of finding high-performing solutions with diverse behaviors. (b) Multi-task optimization is the problem of finding the optimum solutions for a finite set of tasks, each often characterized by a task parameter (or descriptor). (c) In this paper, we propose to extend the multi-task optimization problem to a continuous parametrization, which we call Parametric-Task Optimization. The goal is to be able to return the optimal solution for any task parameter.
 
+## Problem Formulation
+The goal is to find a function $G$ that outputs the optimal solution for each task parameter $\theta$. More formally:
+```math
+\forall \theta \in \Theta, G(\theta) = x^*_{\theta} = \underset{x \in \mathcal{X}}{argmax}  (f(x,\theta))
+```   
+where $\mathcal{X}$ is the solution space, $\Theta$ the task parameter space, $f: \mathcal{X}\times\Theta \rightarrow \mathbb{R}$ the function to optimize (also called fitness function), and $G: \Theta \rightarrow \mathcal{X}$ a function that outputs the optimal solution $x^*_{\theta}$ maximizing the fitness function for the task parameter $\theta$. 
+
 ## Content of the repository
 
 ### Folder: To_Run_PT-ME
