@@ -10,22 +10,48 @@ Optimizing a set of functions simultaneously by leveraging their similarity is c
 
 (a) Quality-Diversity is the problem of finding high-performing solutions with diverse behaviors. (b) Multi-task optimization is the problem of finding the optimum solutions for a finite set of tasks, each often characterized by a task parameter (or descriptor). (c) In this paper, we propose to extend the multi-task optimization problem to a continuous parametrization, which we call Parametric-Task Optimization. The goal is to be able to return the optimal solution for any task parameter.
 
-## Content
+## Content of the repository
 
-### To_Run_PT-ME
+### Folder: To_Run_PT-ME
+
+This folder contains one-file notebooks to run the Parametric-Task MAP-Elites (PT-ME) algorithm on the two toy problems (10-DoF Arm and Archery).
+For simplicity, these notebooks execute the default variant of PT-ME (the called **PT-ME (ours)** in the paper).
+
+#### Expected results
+
+The "Execute" node should take about 1 minute to run for executing 100 000 iterations of PT-ME.
+
+##### On the 10-DoF Arm problem
+the node "Solutions on the task space" should show a similar image:
+
+![image](https://github.com/hucebot/Parametric-Task_MAP-Elites/assets/72027302/ca81af3b-f399-4638-bf16-23fa585f4774)
+
+the node "QD-Score Figure" should show a similar image:
+
+![image](https://github.com/hucebot/Parametric-Task_MAP-Elites/assets/72027302/63aa17ee-4046-4291-bb2b-da2f8cf8b0ce)
+
+##### On the Archery problem
+the node "Solutions on the task space" should show a similar image:
+
+![image](https://github.com/hucebot/Parametric-Task_MAP-Elites/assets/72027302/f9d4162a-398b-41a2-a1fd-b0014f2bce81)
+
+the node "QD-Score Figure" should show a similar image:
+
+![image](https://github.com/hucebot/Parametric-Task_MAP-Elites/assets/72027302/a4a79559-0729-4922-a143-382f10ceb372)
+
 
 #### Files
- - PT-ME (not cleaned).ipynb: one file executable (closest to the archived files)
- - PT-ME (cleaned).ipynb: one file executable with the minimal instructions
+ - PT-ME (cleaned).ipynb: one-file notebook with minimal instructions (it should be the one you try to execute in a Jupyter notebook). 
+ - PT-ME (not cleaned).ipynb: one-file notebook closer to the archived files
 
-#### Requirements
+#### Python requirements
 
  - pip install numpy
  - pip install scikit-learn
  - pip install tqdm
  - pip install matplotlib
 
-### Archive
+### Folder: Archive
 
 This folder only has an archive function and is not meant to be easily run.
 
